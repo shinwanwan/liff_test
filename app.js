@@ -11,6 +11,9 @@ async function main() {
     const profile = await liff.getProfile();
     document.getElementById("userId").innerText = `User ID: ${profile.userId}`;
     document.getElementById("userName").innerText = `User Name: ${profile.displayName}`;
+    document.getElementById("userStatus").innerText = `User Status: ${profile.statusMessage}`;
+
+    console.log(profile);
 }
 
 function closeLiff() {
