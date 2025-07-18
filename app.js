@@ -18,15 +18,15 @@ async function main() {
     document.getElementById("userId").innerText = `User ID: ${profile.userId}`;
     document.getElementById("userName").innerText = `User Name: ${profile.displayName}`;
     document.getElementById("userStatus").innerText = `User Status: ${profile.statusMessage}`;
-    document.getElementById("accessToken").innerText = `Access Token: ${accessToken}`;
+    document.getElementById("accessToken").innerText = `Verify: ${accessToken}`;
 
     if (profile.userId == "Udc176173617583df213e82f5bcdf61c2")
     {
-        document.getElementById("verify").innerText = `Access Token: True`;
+        document.getElementById("verify").innerText = `Verify: True`;
     }
     else
     {
-        document.getElementById("verify").innerText = `Access Token: False`;
+        document.getElementById("verify").innerText = `Verify: False`;
     }
 
 
